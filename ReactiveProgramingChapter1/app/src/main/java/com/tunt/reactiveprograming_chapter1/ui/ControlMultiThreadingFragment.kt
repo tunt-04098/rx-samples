@@ -13,18 +13,20 @@ import com.tunt.reactiveprograming_chapter1.SpinnerBaseAdapter
 import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.functions.Function3
+import io.reactivex.functions.Function5
 import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.fragment_subscribeon_observeon.*
+import java.util.concurrent.TimeUnit
 
 /**
  * Created by TuNT on 9/4/18.
  * tunt.program.04098@gmail.com
  */
-class SubscribeOnObserveOnFragment : Fragment() {
+class ControlMultiThreadingFragment : Fragment() {
 
     companion object {
-        fun newInstance(): SubscribeOnObserveOnFragment {
-            return SubscribeOnObserveOnFragment()
+        fun newInstance(): ControlMultiThreadingFragment {
+            return ControlMultiThreadingFragment()
         }
 
         val samples = arrayListOf(

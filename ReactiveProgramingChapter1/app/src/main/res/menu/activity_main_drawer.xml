@@ -5,13 +5,17 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
+            android:id="@+id/nav_observable"
             android:icon="@drawable/ic_menu_item_drawer"
-            android:title="Import" />
+            android:title="Observable" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/nav_operators"
             android:icon="@drawable/ic_menu_item_drawer"
-            android:title="Gallery" />
+            android:title="Operators" />
+        <item
+            android:id="@+id/nav_control_multi_threading"
+            android:icon="@drawable/ic_menu_item_drawer"
+            android:title="Control Multi-threading" />
         <item
             android:id="@+id/nav_subscribeOn_observeOn"
             android:icon="@drawable/ic_menu_item_drawer"
@@ -21,18 +25,5 @@
             android:icon="@drawable/ic_menu_item_drawer"
             android:title="Subjects" />
     </group>
-
-    <item android:title="Communicate">
-        <menu>
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
-        </menu>
-    </item>
 
 </menu>

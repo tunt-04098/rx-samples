@@ -1,14 +1,11 @@
 package com.tunt.reactiveprograming_chapter1.ui
 
 import android.os.Bundle
-import android.support.design.widget.Snackbar
 import android.support.design.widget.NavigationView
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentActivity
-import android.support.v4.app.FragmentManager
 import android.support.v4.view.GravityCompat
 import android.support.v7.app.ActionBarDrawerToggle
-import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import com.tunt.reactiveprograming_chapter1.R
@@ -56,22 +53,19 @@ class MainActivity : FragmentActivity(), NavigationView.OnNavigationItemSelected
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         // Handle navigation view item clicks here.
         when (item.itemId) {
-            R.id.nav_camera -> {
-                // Handle the camera action
-            }
-            R.id.nav_gallery -> {
+            R.id.nav_observable -> {
 
+            }
+            R.id.nav_operators -> {
+
+            }
+            R.id.nav_control_multi_threading -> {
+                openFragment(ControlMultiThreadingFragment.newInstance())
             }
             R.id.nav_subscribeOn_observeOn -> {
                 openFragment(SubscribeOnObserveOnFragment.newInstance())
             }
             R.id.nav_subjects -> {
-
-            }
-            R.id.nav_share -> {
-
-            }
-            R.id.nav_send -> {
 
             }
         }
