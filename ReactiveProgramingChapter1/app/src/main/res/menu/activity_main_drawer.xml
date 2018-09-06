@@ -13,6 +13,10 @@
             android:icon="@drawable/ic_menu_item_drawer"
             android:title="Operators" />
         <item
+            android:id="@+id/nav_schedulers"
+            android:icon="@drawable/ic_menu_item_drawer"
+            android:title="Schedulers" />
+        <item
             android:id="@+id/nav_control_multi_threading"
             android:icon="@drawable/ic_menu_item_drawer"
             android:title="Control Multi-threading" />

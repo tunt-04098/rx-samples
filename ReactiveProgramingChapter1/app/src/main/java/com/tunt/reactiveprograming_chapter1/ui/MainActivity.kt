@@ -54,10 +54,13 @@ class MainActivity : FragmentActivity(), NavigationView.OnNavigationItemSelected
         // Handle navigation view item clicks here.
         when (item.itemId) {
             R.id.nav_observable -> {
-
+                openFragment(ObservableFragment.newInstance())
             }
             R.id.nav_operators -> {
-
+                openFragment(ControlMultiThreadingFragment.newInstance())
+            }
+            R.id.nav_schedulers -> {
+                openFragment(SchedulersFragment.newInstance())
             }
             R.id.nav_control_multi_threading -> {
                 openFragment(ControlMultiThreadingFragment.newInstance())
@@ -66,7 +69,7 @@ class MainActivity : FragmentActivity(), NavigationView.OnNavigationItemSelected
                 openFragment(SubscribeOnObserveOnFragment.newInstance())
             }
             R.id.nav_subjects -> {
-
+                openFragment(SubjectsFragment.newInstance())
             }
         }
 
